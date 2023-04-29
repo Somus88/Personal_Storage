@@ -5,8 +5,11 @@ import "fmt"
 func faktorial(masukan *int) {
 	if *masukan == 0 {
 		*masukan = 1
+		return
 	}
-	*masukan = *masukan * faktorial(*masukan-1)
+	temp := *masukan - 1
+	faktorial(&temp)
+	*masukan = (*masukan) * temp
 }
 
 func permutasi(a, b int) int {
