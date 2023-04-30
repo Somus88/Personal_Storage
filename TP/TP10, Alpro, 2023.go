@@ -11,7 +11,7 @@ type prodi struct {
 
 type fakultas struct {
 	nama     string
-	arrProdi [nMAX - 1]prodi
+	arrProdi [nMAX]prodi
 	N        int
 }
 
