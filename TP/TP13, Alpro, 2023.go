@@ -112,3 +112,36 @@ func printMax(T arrStudent, n int) {
 	fmt.Printf("Nilai Bahasa Inggris tertinggi diraih oleh %s \n", T[max(T, n, "eng")].name)
 	fmt.Printf("Nilai pelajaran IPA/IPS tertinggi diraih oleh %s \n", T[max(T, n, "sains")].name)
 }
+
+
+/*
+Input:
+Ana 80 90 70 50
+Dini 10 30 90 50
+Joni 20 80 75 77
+Dika 75 71 73 60
+Desi 88 45 76 47
+Vito 67 78 67 56
+Vita 50 86 84 88
+Keysa 77 89 61 87
+Enda 87 65 77 71
+STOP
+
+Expected Output:
+Rangking 1: Keysa rata-rata 78.5
+Rangking 2: Vita rata-rata 77
+Rangking 3: Enda rata-rata 75
+Nilai Matematika tertinggi diraih oleh Desi
+Nilai Bahasa Indonesia tertinggi diraih oleh Ana
+Nilai Bahasa Inggris tertinggi diraih oleh Dini
+Nilai pelajaran IPA/IPS tertinggi diraih oleh Vita
+
+Actual Output:
+Rangking 1: Keysa rata-rata 78.5
+Rangking 2: Vita rata-rata 77
+Rangking 3: Enda rata-rata 75
+Nilai Matematika tertinggi diraih oleh Desi
+Nilai Bahasa Indonesia tertinggi diraih oleh Ana
+Nilai Bahasa Inggris tertinggi diraih oleh Dini
+Nilai pelajaran IPA/IPS tertinggi diraih oleh Vita
+*/
