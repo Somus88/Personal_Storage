@@ -115,6 +115,7 @@ func printMax(T arrStudent, n int) {
 
 
 /*
+ini comment bukan termasuk jawaban
 Input:
 Ana 80 90 70 50
 Dini 10 30 90 50
