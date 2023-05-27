@@ -114,3 +114,89 @@ func totalIV(T arrPokemon, N int, namaX string) float64 {
 	}
 	return keluar
 }
+
+/*
+ini komen bukan termasuk jawaban
+
+input 1:
+6
+Exeggutor 2733 173 15 13 14
+Tyranitar 3753 182 15 14 6
+Espeon 2791 131 12 13 13
+Hippowdon 2784 190 13 15 13
+Ho-Oh 2700 152 10 14 15
+Slaking 3328 206 7 2 5
+Espeon IV_Def
+expected outcome:
+Exeggutor 2733 173 15 13 14
+Tyranitar 3753 182 15 14 6
+Espeon 2791 131 12 13 13
+Hippowdon 2784 190 13 15 13
+Ho-Oh 2700 152 10 14 15
+Slaking 3328 206 7 2 5
+
+Hippowdon 2784 190 13 15 13
+Tyranitar 3753 182 15 14 6
+Ho-Oh 2700 152 10 14 15
+Exeggutor 2733 173 15 13 14
+Espeon 2791 131 12 13 13
+Slaking 3328 206 7 2 5
+Total IV Espeon adalah 84.4444
+
+actual outcome:
+Exeggutor 2733 173 15 13 14
+Tyranitar 3753 182 15 14 6
+Espeon 2791 131 12 13 13
+Hippowdon 2784 190 13 15 13
+Ho-Oh 2700 152 10 14 15
+Slaking 3328 206 7 2 5
+
+Hippowdon 2784 190 13 15 13
+Tyranitar 3753 182 15 14 6
+Ho-Oh 2700 152 10 14 15
+Exeggutor 2733 173 15 13 14
+Espeon 2791 131 12 13 13
+Slaking 3328 206 7 2 5
+Total IV Espeon adalah 84.4444
+
+input 2:
+6
+Exeggutor 2733 173 15 13 14
+Tyranitar 3753 182 15 14 6
+Espeon 2791 131 12 13 13
+Hippowdon 2784 190 13 15 13
+Ho-Oh 2700 152 10 14 15
+Slaking 3328 206 7 2 5
+Pidgeot CP
+Expected output:
+Exeggutor 2733 173 15 13 14
+Tyranitar 3753 182 15 14 6
+Espeon 2791 131 12 13 13
+Hippowdon 2784 190 13 15 13
+Ho-Oh 2700 152 10 14 15
+Slaking 3328 206 7 2 5
+
+Tyranitar 3753 182 15 14 6
+Slaking 3328 206 7 2 5
+Espeon 2791 131 12 13 13
+Hippowdon 2784 190 13 15 13
+Exeggutor 2733 173 15 13 14
+Ho-Oh 2700 152 10 14 15
+Total IV Pidgeot adalah -9999
+actual output:
+Exeggutor 2733 173 15 13 14
+Tyranitar 3753 182 15 14 6
+Espeon 2791 131 12 13 13
+Hippowdon 2784 190 13 15 13
+Ho-Oh 2700 152 10 14 15
+Slaking 3328 206 7 2 5
+
+Tyranitar 3753 182 15 14 6
+Slaking 3328 206 7 2 5
+Espeon 2791 131 12 13 13
+Hippowdon 2784 190 13 15 13
+Exeggutor 2733 173 15 13 14
+Ho-Oh 2700 152 10 14 15
+Total IV Pidgeot adalah -9999
+
+*/
