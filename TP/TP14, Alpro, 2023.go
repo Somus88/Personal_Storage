@@ -22,7 +22,7 @@ func main() {
 	fmt.Println()
 	mengurutkanPokemon(&T, N, flag)
 	printPokemon(T, N)
-	fmt.Printf("Total IV %s adalah %.4g", namaX, totalIV(T, N, namaX))
+	fmt.Printf("Total IV %s adalah %.5g", namaX, totalIV(T, N, namaX))
 }
 
 func inputPokemon(T *arrPokemon, N *int) {
