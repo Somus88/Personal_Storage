@@ -16,7 +16,7 @@ func main() {
 	var N int
 	var flag, namaX string
 	fmt.Scan(&N)
-	inputPokemon(&T, &N)
+	inputPokemon(&T, N)
 	fmt.Scan(&namaX, &flag)
 	printPokemon(T, N)
 	fmt.Println()
@@ -25,8 +25,8 @@ func main() {
 	fmt.Printf("Total IV %s adalah %.5g", namaX, totalIV(T, N, namaX))
 }
 
-func inputPokemon(T *arrPokemon, N *int) {
-	for i := 0; i < *N; i++ {
+func inputPokemon(T *arrPokemon, N int) {
+	for i := 0; i < N; i++ {
 		fmt.Scan(&T[i].name, &T[i].cp, &T[i].hp, &T[i].ivAtk, &T[i].ivDef, &T[i].ivHp)
 	}
 }
