@@ -8,13 +8,15 @@ int main()
     address P;
     List L;
     createList(L);
-    for(int i = 0; i<10; i++)
+    cout << "Masukkan NIM perdigit: " << endl;
+    for(int i = 1; i<=10; i++)
     {
-        cout << "Masukkan angka: ";
+        cout << "Digit " << i << ": ";
         cin >> masuk;
         P = allocate(masuk);
         insertLast(L,P);
     }
+    cout << "Isi list : ";
     printInfo(L);
     return 0;
 }
