@@ -78,7 +78,7 @@ void printInfo(List L)
     address p = first(L);
     while (p != NULL)
     {
-        cout << info(p) << ", ";
+        cout << info(p);
         p = next(p);
     }
     cout << endl;
