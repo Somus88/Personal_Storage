@@ -30,5 +30,6 @@ int main()
     createList(L2);
     reverseList(L,L2);
     printInfo(L2);
+    cout << "Terdapat angka 1 dan 80 karena mereka adalah bukti kalau Insert First dan Insert After berkerja" << endl;
     return 0;
 }
