@@ -10,11 +10,11 @@ struct stack
     int Top;
 };
 
-void createStack_1303220104(stack &S);
-bool isEmpty_1303220104(stack S);
-bool isFull_1303220104(stack S);
-void push_1303220104(stack &S, infotype x);
-int pop_1303220104(stack &S);
-void printInfo_1303220104(stack S);
+void createStack(stack &S);
+bool isEmpty(stack S);
+bool isFull(stack S);
+void push(stack &S, infotype x);
+int pop(stack &S);
+void printInfo(stack S);
 
 #endif // STACK_H_INCLUDED
