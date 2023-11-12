@@ -6,22 +6,22 @@ using namespace std;
 int main()
 {
     stack tugas;
-    createStack_1303220104(tugas);
-    push_1303220104(tugas,'A');
-    push_1303220104(tugas,'Y');
-    push_1303220104(tugas,'A');
-    push_1303220104(tugas,'J');
-    push_1303220104(tugas,'B');
-    push_1303220104(tugas,'A');
-    push_1303220104(tugas,'L');
-    push_1303220104(tugas,'F');
-    push_1303220104(tugas,'I');
-    printInfo_1303220104(tugas);
+    createStack(tugas);
+    push(tugas,'A');
+    push(tugas,'Y');
+    push(tugas,'A');
+    push(tugas,'J');
+    push(tugas,'B');
+    push(tugas,'A');
+    push(tugas,'L');
+    push(tugas,'F');
+    push(tugas,'I');
+    printInfo(tugas);
     cout << endl;
     for(int i = 0; i < 5; i++)
     {
-        pop_1303220104(tugas);
+        pop(tugas);
     }
-    printInfo_1303220104(tugas);
+    printInfo(tugas);
     return 0;
 }
