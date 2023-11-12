@@ -2,11 +2,11 @@
 #include "stack.h"
 using namespace std;
 
-void createStack_1303220104(stack &S)
+void createStack(stack &S)
 {
     Top(S) = 0;
 }
-bool isEmpty_1303220104(stack S)
+bool isEmpty(stack S)
 {
     if(Top(S) == 0)
     {
@@ -16,7 +16,7 @@ bool isEmpty_1303220104(stack S)
         return false;
     }
 }
-bool isFull_1303220104(stack S)
+bool isFull(stack S)
 {
     if(Top(S) == 15)
     {
@@ -26,22 +26,22 @@ bool isFull_1303220104(stack S)
         return false;
     }
 }
-void push_1303220104(stack &S, infotype x)
+void push(stack &S, infotype x)
 {
-    if(!isFull_1303220104(S))
+    if(!isFull(S))
     {
         Top(S)++;
         info(&S)[Top(S)] = x;
     }
 }
-int pop_1303220104(stack &S)
+int pop(stack &S)
 {
     infotype x;
     x = info(&S)[Top(S)];
     Top(S)--;
     return x;
 }
-void printInfo_1303220104(stack S)
+void printInfo(stack S)
 {
     int i;
     for(i = Top(S); i >= 1; i--)
