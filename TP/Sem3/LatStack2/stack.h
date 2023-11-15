@@ -30,6 +30,6 @@ void moveData(stack &S, stack &S2);
 void hapusStack(stack &S);
 void addNewData(stack &S, mhs &newdata);
 mhs deleteData(stack &S);
-void add(stack &S, string nama, string nip, float nilai);
+void add(stack &S, string nama, string nip, float nilai); //ubah float terakhir sesuai pemakaian
 
 #endif // STACK_H_INCLUDED
