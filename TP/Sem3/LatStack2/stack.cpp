@@ -136,7 +136,7 @@ mhs deleteData(stack &S)
     return x;
 }
 
-void add(stack &S, string nama, string nip, float nilai)
+void add(stack &S, string nama, string nip, float nilai) //ubah float sesuai pemakaian
 {
     mhs masuk;
     masuk.nama = nama;
