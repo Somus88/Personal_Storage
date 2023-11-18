@@ -1,0 +1,67 @@
+No 1
+procedure(In/Out dataVaksin: Queue, in nama, nim, vaksin: string)
+kamus
+    P: adr
+algoritma
+    P <- createNewElement(nama, nim, vaksin)
+    if(head(Q) == NULL) then
+        head(Q) <- P;
+        tail(Q) <- P;
+    else
+        next(tail(Q)) <- P;
+        tail(Q) <- P;
+    endif
+endprocedure
+
+No2
+procedure addNewPasien(In/Out TPasien: Queue, in Pas: adr)
+kamus
+
+algoritma
+    if(head(TPasien) == NULL) then
+        head(TPasien) <- Pas
+        tail(TPasien) <- Pas
+        next(Pas) <- NULL
+        prev(Pas) <- NULL
+    else
+        next(tail(TPasien)) <- Pas
+        prev(Pas) <- tail(TPasien)
+        tail(TPasien) <- Pas
+        next(Pas) <- NULL
+    endif
+endprocedure
+
+No3
+procedure panggilPasien(In/Out: antrian: Queue, out P: adr)
+kamus
+
+algoritma
+    if(head(antrian) == Nil) then
+        output("Pasien Habis")
+        P <- NULL
+    else
+        P <- head(antrian)
+        head(antrian) <- next(P)
+        next(P) <- NULL
+    endif
+endprocedure
+
+No4
+function vaksinDone(V: Queue)--> adr
+kamus
+    P: adr
+algoritma
+    if(head(V) == NULL) then
+        P <- NULL
+    else if(next(head(V)) == NULL) then
+        P <- head(V)
+        head(V) <- NULL
+        tail(V) <- NULL
+    else
+        P <- head(V)
+        head(V) <- next(P)
+        prev(head(V)) <- NULL
+        next(P) <- NULL
+    endif
+    return P
+endfunction
