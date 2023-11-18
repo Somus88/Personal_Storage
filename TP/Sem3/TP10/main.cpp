@@ -20,6 +20,8 @@ int main()
     enQueue(tugas, alokasi(10));
     enQueue(tugas, alokasi(11));
     printInfo(tugas);
+    cout << endl << "Fungsi NB of Elemen" << endl;
+    cout << nbOfElm(tugas) << endl;
     cout << endl << "Ganjil Genap" << endl << "Kondisi awal" << endl;
     createQueue(QGanjil);
     createQueue(QGenap);
