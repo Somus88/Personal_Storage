@@ -18,7 +18,7 @@ bool isEmpty(stack S)
 }
 bool isFull(stack S)
 {
-    if(top(S) == 5)
+    if(top(S) == 10)
     {
         return true;
     }else
