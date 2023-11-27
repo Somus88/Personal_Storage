@@ -58,7 +58,7 @@ void printInfo(stack S)
 void inSementara(stack &S)
 {
     infotype x;
-    for(int i=0; i<5; i++){
+    for(int i=0; i<7; i++){
         cout << "Nama Koper : ";
         cin >> x.nama;
         cout << "Ukuran Koper : ";
