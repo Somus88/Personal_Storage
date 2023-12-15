@@ -26,11 +26,11 @@ struct listJadwal
     adr_jadwalP first;
 };
 
-void createListJadwal_1303220104(listJadwal &L);
-adr_jadwalP createElemenJadwal_1303220104(infotype X);
-void insertLastJ_1303220104(listJadwal &L, adr_jadwalP P);
-void showJadwal_1303220104(listJadwal L);
-void deleteFirstJ_1303220104(listJadwal &L, adr_jadwalP &P);
-adr_jadwalP searchJ_1303220104(listJadwal L, string dari, string ke, string tanggal);
+void createListJadwal(listJadwal &L);
+adr_jadwalP createElemenJadwal(infotype X);
+void insertLastJ(listJadwal &L, adr_jadwalP P);
+void showJadwal(listJadwal L);
+void deleteFirstJ(listJadwal &L, adr_jadwalP &P);
+adr_jadwalP searchJ(listJadwal L, string dari, string ke, string tanggal);
 
 #endif // FLIGHT_H_INCLUDED
