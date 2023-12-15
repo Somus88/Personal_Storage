@@ -2,18 +2,18 @@
 #include "flight.h"
 using namespace std;
 
-void createListJadwal_1303220104(listJadwal &L)
+void createListJadwal(listJadwal &L)
 {
     first(L) = NULL;
 }
-adr_jadwalP createElemenJadwal_1303220104(infotype X)
+adr_jadwalP createElemenJadwal(infotype X)
 {
     adr_jadwalP P = new elemenJadwal;
     info(P) = X;
     next(P) = NULL;
     return P;
 }
-void insertLastJ_1303220104(listJadwal &L, adr_jadwalP P)
+void insertLastJ(listJadwal &L, adr_jadwalP P)
 {
     adr_jadwalP Q;
     if(first(L) == NULL)
@@ -29,7 +29,7 @@ void insertLastJ_1303220104(listJadwal &L, adr_jadwalP P)
         next(Q) = P;
     }
 }
-void showJadwal_1303220104(listJadwal L)
+void showJadwal(listJadwal L)
 {
     adr_jadwalP P = first(L);
     while(P != NULL)
@@ -38,13 +38,13 @@ void showJadwal_1303220104(listJadwal L)
         P = next(P);
     }
 }
-void deleteFirstJ_1303220104(listJadwal &L, adr_jadwalP &P)
+void deleteFirstJ(listJadwal &L, adr_jadwalP &P)
 {
     P = first(L);
     first(L) = next(first(L));
     next(P) = NULL;
 }
-adr_jadwalP searchJ_1303220104(listJadwal L, string dari, string ke, string tanggal)
+adr_jadwalP searchJ(listJadwal L, string dari, string ke, string tanggal)
 {
     adr_jadwalP P = first(L);
     adr_jadwalP keluar = NULL;
