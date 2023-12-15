@@ -11,7 +11,7 @@ int main()
     adr_jadwalP P, cari;
 
     cout << "Berapa yang diinput (3) ";
-    createListJadwal_1303220104(L);
+    createListJadwal(L);
     cin >> n;
 
     for(int i = 1; i <= n; i++)
@@ -31,16 +31,16 @@ int main()
         getline(cin, X.tujuan);
         cout << "Input Kapasitas ";
         cin >> X.kapasitas;
-        P = createElemenJadwal_1303220104(X);
-        insertLastJ_1303220104(L, P);
+        P = createElemenJadwal(X);
+        insertLastJ(L, P);
     }
-    showJadwal_1303220104(L);
+    showJadwal(L);
     cout << "delete first" << endl;
-    deleteFirstJ_1303220104(L, P);
+    deleteFirstJ(L, P);
     delete P;
-    showJadwal_1303220104(L);
+    showJadwal(L);
     cout << "searching" << endl;
-    cari = searchJ_1303220104(L, "Surabaya (SUB)", "Malang (MLG)", "9 Desember 2022");
+    cari = searchJ(L, "Surabaya (SUB)", "Malang (MLG)", "9 Desember 2022");
     cout << "Kode: "<< info(cari).kode << "\nJenis: " << info(cari).jenis << " Tanggal: " << info(cari).tanggal << " Waktu: " << info(cari).waktu << " Asal: " << info(cari).asal << " Tujuan: " << info(cari).tujuan << " Kapasitas: " << info(cari).kapasitas << endl;
     return 0;
 }
